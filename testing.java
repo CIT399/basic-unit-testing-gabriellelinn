@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 public class testing {
     private String testCase1 = "5701239999";
     private String testCase2 = "(610)9901234";
-    private String testCase3 = "570589-16983";
+    private String testCase3 = "570589-1698";
 
 
     @Test
@@ -16,6 +16,6 @@ public class testing {
     }
     @Test
     public void noparen(){
-        assertFalse(Telephone.format(testCase3)== "570589-16983");
+        assertFalse(Telephone.format(testCase3)== "(570)589-1698");
     }
 }
